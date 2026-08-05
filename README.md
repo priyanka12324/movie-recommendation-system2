@@ -96,34 +96,51 @@ The web application allows users to:
 
 ---
 
+## 📁 Project Structure
+
+```text
 Movie-Recommendation-System/
 │
 ├── app.py
 ├── preprocessing.ipynb
-├── tmdb_5000_movies.csv
-├── tmdb_5000_credits.csv
-├── movies.pkl
-├── similarity.pkl
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
 ├── LICENSE
 └── assets/
     └── screenshot.png
+```
 ---
 
 # ▶️ Installation
 
 Clone the repository:
+Download the TMDB 5000 Movie Dataset and place the following files in the project root:
+
+- `tmdb_5000_movies.csv`
+- `tmdb_5000_credits.csv`
+  https://www.kaggle.com/datasets/ahsanaseer/top-rated-tmdb-movies-10k?fbclid=IwAR2MpWrWpcw2QNCv_FZg2l0sjBh9xAvhrqtnZBO9K-QS6PHI1aHkdB6qLa0 download these data set from this site 
+
+Run the preprocessing notebook to generate the required pickle files:
 
 ```bash
-git clone https://github.com/priyanka12324/movie-recommendation-system
+jupyter notebook preprocessing.ipynb
+```
+
+After generating `movies.pkl` and `similarity.pkl`, start the website:
+
+```bash
+streamlit run app.py
+```
+
+```bash
+git clone https://github.com/priyanka12324/movie-recommendation-system2
 ```
 
 Move to the project folder:
 
 ```bash
-cd Movie-Recommendation-System
+cd Movie-Recommendation-System2
 ```
 
 Install dependencies:
@@ -140,13 +157,31 @@ streamlit run app.py
 ```
 
 ---
+## 📂 Dataset
+
+This project uses the **TMDB 5000 Movie Dataset**.
+
+Due to GitHub's browser upload size limitations, the dataset files are **not included** in this repository.
+
+Download the following files separately and place them in the project root before running the preprocessing notebook:
+
+- `tmdb_5000_movies.csv`
+- `tmdb_5000_credits.csv`
+- https://www.kaggle.com/datasets/ahsanaseer/top-rated-tmdb-movies-10k?fbclid=IwAR2MpWrWpcw2QNCv_FZg2l0sjBh9xAvhrqtnZBO9K-QS6PHI1aHkdB6qLa0
+
+Running `preprocessing.ipynb` will generate:
+
+- `movies.pkl`
+- `similarity.pkl`
+
+These files are required to run the Streamlit web application.
 
 # 📸 Application Screenshot
 
 Add your Streamlit application screenshot here.
 
 ```
-Movie-Recommendation-System\assets\movie_screenshot.png
+Movie-Recommendation-System2\assets\movie_screenshot.png
 ```
 
 ---
@@ -177,4 +212,4 @@ Movie-Recommendation-System\assets\movie_screenshot.png
 **Priyanka Rawat**
 GitHub:https://github.com/priyanka12324
 
-
+## note 
