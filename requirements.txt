@@ -1,6 +1,5 @@
-streamlit
-pandas
-scikit-learn
-numpy
-nltk
-requests
+streamlit>=1.31,<2
+pandas>=2.0,<3
+scikit-learn>=1.4,<2
+numpy>=1.26,<3
+nltk>=3.8,<4
