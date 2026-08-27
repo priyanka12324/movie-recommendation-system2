@@ -4,6 +4,10 @@ A presentation-ready **content-based movie recommendation website** built with P
 
 CineMatch lets a user select a movie and instantly returns five similar titles. Recommendations are based on movie metadata such as genres, keywords, cast, crew, and overview.
 
+## 🌐 Live demo
+
+### [🚀 Open CineMatch Movie Recommendation Website](https://movie-recommendation-system12324.streamlit.app/)
+
 ![CineMatch application](movie_screenshot.png)
 
 ## ✨ Features
@@ -68,13 +72,11 @@ The generated `movies.pkl` must contain at least these columns:
 - `title`
 - `tags`
 
-## ☁️ Deploy on Streamlit Community Cloud
+## ☁️ Deployment
 
-1. Push the project to GitHub.
-2. Open [Streamlit Community Cloud](https://share.streamlit.io/).
-3. Select this repository and the `main` branch.
-4. Set the entry file to `app.py`.
-5. Click **Deploy**.
+The application is deployed on Streamlit Community Cloud:
+
+**Live website:** [movie-recommendation-system12324.streamlit.app](https://movie-recommendation-system12324.streamlit.app/)
 
 No API keys or secrets are required.
 
